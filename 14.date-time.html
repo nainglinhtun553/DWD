@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Date and Time Exerise</title>
+</head>
+<body>
+	<form action="">
+		
+			<label for="birthday">Please enter your birthday</label>
+			<input type="date" id="birthday" name="birth" value="2018-07-22" min="1930-01-01" max="2002-12-31">
+
+			<h3>Your Choosen Date:</h3>
+			<p>yy-mm-dd</p>
+
+
+	</form>
+		<button onclick="buttonAction()">GetDate</button>
+
+	<script>
+		var date=document.querySelector('input[type="date"]');
+		var paragraph=document.querySelector('p');
+
+
+		function buttonAction(){
+			paragraph.textContent=date.value;
+		}
+	</script>
+</body>
+</html>

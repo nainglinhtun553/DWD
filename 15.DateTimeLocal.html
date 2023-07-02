@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Date and Time Exerise</title>
+</head>
+<body>
+	<form action="">
+		
+			<label for="meeting-time">Date Time of Local</label>
+			<input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-07-22T19:00" min="1930-01-01T00:00" max="2020-1-1T00:00">
+
+			<h3>.................</h3>
+			<p>00:00</p>
+
+
+	</form>
+		<button onclick="buttonAction()">GetDate</button>
+
+	<script>
+		var date=document.querySelector('input[type="datetime-local"]');
+		var paragraph=document.querySelector('p');
+		var about=document.querySelector('input[name="meeting-time"]');
+		var h3=document.querySelector('h3');
+
+
+		function buttonAction(){
+			// date.value="2022-12-30T00:00";
+			paragraph.textContent=date.value;
+			about.name="Talktive Time";
+			h3.textContent=about.name;
+		}
+	</script>
+</body>
+</html>

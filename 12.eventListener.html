@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EventListener</title>
+</head>
+<body>
+
+	<form action="">
+		
+		<input type="button" value="Start Motor" style="color: blueviolet;">
+		<p style="color:brown;">Motor is Stopped</p>
+		<h1>Hello this is h1</h1>
+	</form>
+
+
+	<script>
+		const button=document.querySelector('input');
+		const paragraph=document.querySelector('p');
+
+		button.addEventListener('click',buttonAction);
+		function buttonAction(){
+			if(button.value==='Start Motor'){
+				button.value='Stop Motor';
+
+				paragraph.textContent="Motor has started";
+			}else{
+				button.value='Start Motor';
+				paragraph.textContent='Motor was Stopped';
+			}
+		}
+	</script>
+	
+</body>
+</html>
